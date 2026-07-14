@@ -1,0 +1,12 @@
+opt:
+  z1: 1.1510e4 # in um
+  z2: 1.3970e4 # in um
+  wavelength: 0.405 # in um
+  sampling: 2.4 # in um
+
+general:
+  max_iter: 25
+  file_path: "./data/cheek_cells.h5"
+  model_path: "./trained_models/cheek_cells.keras"
+  pad: 128 # in pixels
+  roi: [1700, 1700, 512, 512] # Optional ROI: [y_min, y_min, height, width] in pixels

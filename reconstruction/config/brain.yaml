@@ -1,0 +1,12 @@
+opt:
+  z1: 1860.0 # in um
+  z2: 5160.0 # in um
+  wavelength: 0.405 # in um
+  sampling: 2.4 # in um
+
+general:
+  max_iter: 10
+  file_path: "./data/brain.h5"
+  model_path: "./trained_models/brain.keras"
+  pad: 0 # in pixels
+  roi: [100, 1150, 3072, 4096] # Optional ROI: [y_min, y_min, height, width] in pixels

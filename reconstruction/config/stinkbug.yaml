@@ -1,0 +1,11 @@
+opt:
+  z1: 3.5578e3 # in um
+  z2: 11.780e3 # in um
+  wavelength: 0.5610 # in um
+  sampling: 2.4 # in um
+
+general:
+  max_iter: 25
+  file_path: "./data/stinkbug.h5"
+  model_path: "./trained_models/usaf.keras"
+  pad: 128 # in pixels

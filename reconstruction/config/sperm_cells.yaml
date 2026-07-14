@@ -1,0 +1,11 @@
+opt:
+  z1: 70.0 # in um
+  z2: 101.0 # in um
+  wavelength: 0.635 # in um
+  sampling: 0.2750 # in um
+
+general:
+  max_iter: 25
+  file_path: "./data/sperm.h5"
+  model_path: "./trained_models/sperm.keras"
+  pad: 128 # in pixels

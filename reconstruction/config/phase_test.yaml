@@ -1,0 +1,12 @@
+opt:
+  z1: 3.5578e3 # in um
+  z2: 11.780e3 # in um
+  wavelength: 0.5610 # in um
+  sampling: 2.4 # in um
+
+general:
+  max_iter: 25
+  file_path: "./data/phase_test.h5"
+  model_path: "./trained_models/usaf.keras"
+  pad: 128 # in pixels
+  roi: [1470, 2865, 512, 512] # Optional ROI: [y_min, y_min, height, width] in pixels
