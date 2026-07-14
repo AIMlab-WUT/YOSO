@@ -1,0 +1,49 @@
+# YOSO training data generation configuration
+
+dataset:
+  # Path to folder containing RGB images used for synthetic object generation
+  data_path: "C:/Users/jw/Desktop/dyplomy/flowers_dataset" #"/path/to/images"
+
+  # Number of images used to generate the dataset
+  img_count: 4000
+
+  # Dataset name used in output filename
+  name: "natural_images"
+
+
+simulation:
+  # Network input size [pixels]
+  img_size: 256
+
+  # Padding size for numerical diffraction propagation [pixels]
+  padded_img_size: 512
+
+  # Sampling interval [um]
+  pixel_size: 2.4
+
+  # Illumination wavelength [um]
+  wavelength: 0.561
+
+  # Propagation distances for multi-height hologram generation [um]
+  z1: 3560
+  z2: 11780
+
+
+object:
+  # Phase modulation range [rad]
+  phase_range:
+    - -3.14159
+    - 3.14159
+
+  # Amplitude modulation range
+  amplitude_range:
+    - 0.0
+    - 0.3
+
+
+preprocessing:
+  # Number of pixels removed from each image border
+  px_trim: 10
+
+  # Gaussian filtering parameter for phase extraction
+  gaussian_sigma: 85
