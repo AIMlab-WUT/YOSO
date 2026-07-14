@@ -1,0 +1,87 @@
+# =========================
+# YOSO generated data
+# =========================
+
+# Training datasets
+*.h5
+*.hdf5
+*.npz
+*.mat
+
+# Reconstruction data and outputs
+/reconstruction/data/
+/reconstruction/results/
+/reconstruction/trained_models/
+
+# Training outputs
+/training/logs/
+/training/checkpoints/
+*.keras
+events.out.tfevents.*
+
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Shared libraries
+*.so
+
+
+# =========================
+# Virtual environments
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# =========================
+# IDE / editors
+# =========================
+
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Python packaging
+# =========================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =========================
+# Logs and temporary files
+# =========================
+
+*.log
+*.tmp
+*.bak
