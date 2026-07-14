@@ -1,0 +1,25 @@
+data:
+  validation_split: 0.1
+  test_split: 0.1
+  batch_size: 2
+
+model:
+  input_shape: [null, null, 1]
+  num_resnet_blocks: 5
+  init_num_feature_maps: 32
+  initializer: he_normal
+
+training:
+  epochs: 25
+  optimizer:
+    type: adam
+    learning_rate: 0.05
+    decay:
+      type: exponential
+      decay_steps: 10000
+      decay_rate: 0.9
+  loss:
+    type: mse
+  metrics: # [mse, ssim]
+    - mse
+    - ssim
