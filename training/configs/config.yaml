@@ -13,7 +13,7 @@ training:
   epochs: 25
   optimizer:
     type: adam
-    learning_rate: 0.05
+    learning_rate: 0.001
     decay:
       type: exponential
       decay_steps: 10000
